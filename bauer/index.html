@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Games</title>
+<style>
+* {margin:0px;padding:0px;border:0px}
+body {background:#eee;margin:0px;padding:0px;}
+#layer1 {}
+#menu {position:absolute;height:100%;left:0px;}
+#main {position:absolute;height:100%;}
+iframe {width:100%;height:100%;}
+.menu_item{height:60px;line-height:60px;padding-left:20px;font-weight:bold;font-family:arial;color:#333;}
+.menu_item:hover{background-color: #999;color:#eee;}
+</style>
+</head>
+<body>
+<div id="layer1">
+	<div id="menu"></div>
+	<div id="main">
+		<iframe id="content" src="http://vk.com"></iframe>
+	</div>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+	//var e=document.createElement("script");
+	//e.src="http://code.jquery.com/jquery-1.11.1.min.js";
+	//document.body.appendChild(e);
+	var list = [
+		"Adventure Puzzle",
+		"Hexagon Puzzle",
+		"Laser Game",
+		"Points Game",
+		//"tank game",
+		"Sliding Blocks"
+		//"Trains next (Car Road Conductor)",
+		//"wordgame"
+	];
+	var _w = document.body.clientWidth;
+	var _h = document.body.clientHeight;
+	var fw = parseInt(720 / 1280 * _h);
+	var mw = parseInt((_w - fw) / 2);
+	$("#menu").width(mw);
+	//$("#layer1").height(_h);
+	$("#main").width(fw).css({left:mw});
+	//$("#main").height(_h);
+	for(i in list) {
+		var url = "./proj/" + list[i] + "/index.html";
+		$("#menu").append(
+			$("<div>").addClass("menu_item").data({url:url}).html(list[i])
+		)
+	}
+	var url1 = "./proj/" + list[0] + "/index.html";
+	$("#content").attr({src:url1});
+	$("#menu").on("click", ".menu_item", function() {
+		var url = $(this).data('url');
+		$("#content").attr({src:url});
+	});
+</script>
+</body>
+</html>

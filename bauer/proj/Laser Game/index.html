@@ -1,0 +1,54 @@
+<head>
+<link rel="stylesheet" href="css.css"/>
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="jquery.ui.touch-punch.min.js"></script>
+<script src="gameengine.js"></script>
+<script src="levels.js"></script>
+<script src="lang_ru.js"></script>
+<title>made by romasan 2013</title>
+</head>
+<body>
+	<div id="startscreen">
+		<!--
+		<div id="playgame"></div>
+		-->
+		<div id="continue"></div>
+		<div id="newgame"></div>
+	</div>
+	<div id="mapsplash" class="hidden">
+	</div>
+	<div id="help"></div>
+	<div id="gamescreen" class="hidden">
+		<div id="pointsbar">
+			<!--
+			Steps: <span id="points">0</span>
+			-->
+			<span id="levelbar">
+				Level: <span id="level">X</span>
+			</span>
+			<!--
+			<span id="red">X</span>
+			<span id="green">X</span>
+			<span id="blue">X</span>
+			<span id="yellow">X</span>
+			-->
+		</div>
+		<div id="resetbut" onclick="document.location.reload();"></div>
+		<div id="map">
+			<canvas id="canvas" width="100" height="100"></canvas>
+			<div id="layer1"></div>
+			<!--
+			<canvas id="canvas" width="100" height="100" onclick=""></canvas>
+			-->
+		</div>
+	</div>
+	<div id="shadow"></div>
+	<div id="youwin" class="hidden">YOU WIN!</div>
+	<!--
+	<div id="gameover" class="hidden">GAME OVER :(</div>
+	-->
+	<!--
+	<div id="debugbar">debug</div>
+	-->
+</body>

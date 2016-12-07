@@ -1,0 +1,100 @@
+﻿<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<title>Сайт учащихся группы 803с Высшего Колледжа Информатики НГУ</title>
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<script language="javascript">
+var m = new Array(
+"http://www.ci.nsu.ru/","ВКИ",
+"http://www.nsu.ru/","НГУ",
+"javascript:gwindow('videos/index.htm');","Наше&nbsp;видео",
+"javascript:gwindow('photos/index.htm');","Фотоальбом",
+"javascript:gwindow('doc/index.htm');","Документы",
+"http://vkontakte.ru/club4594239","Мы&nbsp;ВКонтакте",
+"mailto:admin@803c.ru","Обратная связь",
+"javascript:imenu()","убрать"
+);
+var w=0;
+var url="";
+var y;
+function menu()
+{
+document.all.menu.innerHTML="";
+for (j=0;j<m.length;j=j+2)
+{
+document.all.menu.innerHTML+="<a href=\"" + m[j] + "\">" + m[j+1] + "</a>&nbsp; ";
+};
+};
+function gx()
+{
+x+=16;
+splash.style.width=x;
+if (x<800){setTimeout("gx();",1);
+}
+};
+function imenu()
+{
+document.all.menu.innerHTML="<a href=\"javascript:menu()\" align=\"right\">Карта сайта</a>";
+};
+function gy()
+{
+y+=20;
+splash.style.height=y;
+if (y<600){setTimeout("gy();",1);
+}
+};
+function gwindow(i)
+{
+url=i;
+y=0;
+gy();
+splash.innerHTML="<iframe src=\"" + url + "\" width=\"100%\" height=\"100%\" frameborder=\"0\" vspace=\"0\" hspace=\"0\"  marginwidth=\"0\" marginheight=\"0\" scrolling=\"auto\"><\/iframe>";
+};
+function v()
+{
+imenu();
+gwindow("doc/index.htm");
+}
+</script>
+</head>
+<body onload="v()">
+<table cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr height="64">
+<td></td>
+</tr>
+<tr>
+<td align="center" valign="top">
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><img src="style/tl.gif" border="0" width="16" height="16"></td>
+<td class="t"></td>
+<td><img src="style/tr.gif" border="0" width="16" height="16"></td>
+</tr>
+<tr>
+<td class="l"></td>
+<td>
+<table cellpadding="0" cellspacing="0" width="800" class="top">
+<tr valign="top">
+<td align="right">
+<iframe src="top.swf" width="800" height="100" frameborder="0" vspace="0" hspace="0"  marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</td>
+</tr>
+<tr class="bg"><td align="center"><div id="splash"></div>
+<div id="menu" class="banners"><font size="1">Загрузка...</font></div></tr>
+</table>
+</td>
+<td class="r"></td>
+</tr>
+<tr>
+<td><img src="style/bl.gif" border="0" width="16" height="16"></td>
+<td class="b"></td>
+<td><img src="style/br.gif" border="0" width="16" height="16"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr height="48">
+<td></td>
+</tr>
+</body>
+</html>

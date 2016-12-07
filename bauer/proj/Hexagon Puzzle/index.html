@@ -1,0 +1,32 @@
+<head>
+<link rel="stylesheet" href="css.css"/>
+<script src="jquery.min.js"></script>
+<script src="gameengine.js"></script>
+<script src="levels.js"></script>
+<script>
+	var words = {
+		youwin : "YOU WIN!",
+		gameover : "GAME OVER :("
+	}
+</script>
+</head>
+<body>
+	<!--
+	<div id="mapsplash"></div>
+	-->
+	<div id="help" class="hidden"></div>
+	<div id="gamescreen" class="hidden">
+		<div id="pointsbar">
+			Level: <span id="level">X</span>
+			<!--
+			Points: <span id="points">X</span>
+			-->
+		</div>
+		<div id="map"></div>
+		<div id="resetbut" onclick="document.location.reload()"></div>
+	</div>
+	<div id="startscreen">
+		<div id="playbutton"></div>
+	</div>
+	<div id="splash" class="hidden">≈сли вы видите этот текст то произошла кака€-то ошибка, вы можете сообщить о ней по адресу: <a href="mailto:kotapesic@gmail.com?subject=hexagonapp">kotapesic@gmail.com</a></div>
+</body>

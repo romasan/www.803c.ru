@@ -1,0 +1,49 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css.css"/>
+	<script>
+		var lang = {
+			youwin : "YOU WIN!",
+			gameover : "GAME OVER!"
+		}
+	</script>
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.8.9.custom.min.js"></script>
+	<script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+	<script src="gameengine.js"></script>
+	<!--
+	<script src="levels.js"></script>
+	-->
+</head>
+<body>
+	
+	<div id="startscreen">
+		<div id="playbutton"></div>
+	</div>
+	<div id="screen" class="hidden">
+		<div id="pointsbar">
+			<!--Level: <span id="level">X</span>-->
+			<!--Points: <span id="points">X</span>-->
+			<!--Health: --><span id="hp"></span>
+		</div>
+		<div id="map"></div>
+		<div id="left"></div>
+		<div id="right"></div>
+		<div id="fire"></div>
+	</div>
+	</div>
+	<div id="debug"></div>
+	
+	<!--
+	<div id="resetbut" onclick="document.location.reload();"></div>
+	-->
+	<div id="reset" onclick="document.location.reload();"></div>
+	<div id="bar" style="position:absolute;top:0px;left:0px;"></div>
+	<!--
+	<div id="splash" class="hidden">
+		<div class="shadow"></div>
+		<div id="message"></div>
+	</div>
+	-->
+</body>
+</html>

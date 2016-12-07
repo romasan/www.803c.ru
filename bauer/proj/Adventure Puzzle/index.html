@@ -1,0 +1,78 @@
+<head>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css.css">
+<script src="jquery.min.js"></script>
+<script>
+var lang = {
+	gameover : "GAME OVER",
+	winplayer : "YOU WIN!"
+}
+</script>
+<script src="gameengine.js"></script>
+</head>
+<body>
+	<div id="startscreen">
+		<div id="newgame"></div>
+		<div id="continue"></div>
+		<div id="help"></div>
+	</div>
+	<div id="mapsplash" class="hidden"></div>
+	<div id="help" class="hidden"></div>
+	<div id="gamescreen" class="hidden">
+		<div id="middleline"></div>
+
+		<!--
+		<div id="pointsbar">Points: <span id="points">0</span></div>
+		-->
+
+		<div id="player" class="hero">
+				<div class="progressbar playerprogress"></div>
+				<div class="progress playerprogress"></div>
+				<div class="splashhp hero hidden">+99</div>
+				<div class="icon hero playerbg0"></div>
+		</div>
+		<div id="herohp" class="hps ahide"></div>
+		
+		<div id="opponent" class="hero">
+				<div class="progressbar playerprogress"></div>
+				<div class="progress playerprogress"></div>
+				<div class="splashhp hero hidden">+99</div>
+				<div class="icon hero"></div>
+		</div>
+		<div id="ophp" class="hps ahide"></div>
+		
+		<div id="combatprogressbar" class="ahide">
+			<div id="red" class="cprogress"></div>
+			<div id="white" class="cprogress"></div>
+			<div id="combatbg"></div>
+			<!--
+			<div class="layerimage combatprogress"></div>
+			-->
+		</div>
+		
+		<div id="topframe"></div>
+		<div id="map"></div>
+		<div id="bottomframe"></div>
+		<!--
+		<div id="playeris">PLAYER 1</div>
+		-->
+		<!--
+		<div id="resetbut" onclick="document.location.reload()"></div>
+		-->
+	</div>
+	<div id="splash" class="hidden">
+		<div class="splashshadow"></div>
+		<div id="splashtext"></div>
+	</div>
+	<div id="helpscreen" class="hidden">
+		<div class="splashshadow"></div>
+		<div class="helptext">
+			<p>Destroy your enemy with Match3!</p>
+			<p><img src="1.png"> - Collect combination of 3 and more swords to case physical damages </p>
+			<p><img src="2.png"> - Collect combination of 3 and more swords to case physical damages </p>
+			<p>Be careful! Some of the monsters have resistance to certain types of attacks.</p>
+			<p>And good luck, young hero!</p>
+		</div>
+	</div>
+	
+</body>

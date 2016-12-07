@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<title>Сайт учащихся группы 803с Высшего Колледжа Информатики НГУ - Видео</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript">
+var m = new Array(
+"javascript:video('video/1.flv');","Наши 1",
+"javascript:video('video/2.flv');","Наши 2",
+"javascript:video('video/3.flv');","Наши 3",
+"javascript:video('video/4.flv');","Наши 4",
+"javascript:video('video/5.flv');","Наши 5"
+);
+function menu()
+{
+document.all.menu.innerHTML="";
+for (j=0;j<m.length;j=j+2)
+{
+document.all.menu.innerHTML+="<a href=\"" + m[j] + "\">" + m[j+1] + "</a><br>";
+};
+};
+function video(i)
+{
+i = "file=" + i + "&image=video/preview.gif";
+var s1 = new SWFObject("player.swf","ply","640","480","0","0");
+s1.addParam("allowfullscreen","true");
+s1.addParam("allownetworking","all");
+s1.addParam("controlbar","over");
+s1.addParam("allownetworking","all");
+s1.addParam("allowscriptaccess","always");
+s1.addParam("menu","false");
+s1.addParam("flashvars",i);
+s1.write("v1");
+};
+function v()
+{
+menu();
+video('video/1.flv');
+}
+</script>
+</head>
+<body onload="v()">
+<table width="100%" height="100%" cellpadding="0" cellspacing="0">
+<tr><td valign="center" align="middle">
+<div id="v1"></div>
+</td>
+<td valign="top" id="menu">
+</td></tr>
+</table>
+</html>

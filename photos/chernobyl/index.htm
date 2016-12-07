@@ -1,0 +1,51 @@
+﻿<SCRIPT language="javascript">
+var p = new Array("x_0ebe2135.jpg","x_1b71f438.jpg","x_3d67bddc.jpg","x_6cec3abb.jpg","x_9c5e4ff8.jpg","x_45a04448.jpg","x_54b6447d.jpg","x_144ad419.jpg","x_334e52ca.jpg","x_355f87de.jpg",
+"x_920fce80.jpg","x_2701a86d.jpg","x_3722b624.jpg","x_9402625e.jpg","x_a884d13d.jpg","x_aacef304.jpg","x_b9634d0a.jpg","x_ba65bbe2.jpg","x_bb820cda.jpg","x_bbae6af6.jpg","x_bbb95f9b.jpg",
+"x_c76b44bb.jpg","x_eb8f8ec3.jpg","x_f459bace.jpg","x_fb99746c.jpg");
+var l = p.length;
+var i=0;
+function wrt()
+{
+document.all.nbr.innerHTML=i+1 + " из " + l;
+myi.src=p[i];
+}
+function next()
+{
+if (i < l-1){i++;wrt();}
+};
+function back()
+{
+if (i > 0){i--;wrt();}
+}
+function photo(j)
+{
+document.all.wall.innerHTML="<a href=\"javascript:next()\"><img src=\"#\" id=\"myi\" border=\"0\"></a><br> <a href=\"javascript:photos()\">все фото</a> <a href=\"javascript:back()\">назад</a> | <a href=\"javascript:next()\">вперёд</a> <b id =\"nbr\"></b>";
+i=j;
+wrt();
+}
+function photos()
+{
+document.all.wall.innerHTML="";
+for(i=0;i<p.length;i++){
+if(i!=0&i%6==0){document.all.wall.innerHTML+="<br>"}
+document.all.wall.innerHTML+="<span><a href=\"javascript:photo(" + i + ")\"><img src=\"m/" + p[i] + "\" border=\"0\"></a></span>"
+}
+}
+</SCRIPT>
+<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<title>Сайт учащихся группы 803с Высшего Колледжа Информатики НГУ - Фотоальбом - Чернобыль</title>
+<link rel="stylesheet" type="text/css" href="../index.css">
+</head>
+<body onload="photo(0)">
+<table width="100%" height="100%" cellpadding="0" cellspacing="0">
+<tr><td align="left" valign="top">
+<a href="../index.htm">назад</a>
+</td></tr>
+<tr><td valign="top" align="middle">
+<div id="wall"></div>
+</td></tr>
+</table>
+</body>
+</html>

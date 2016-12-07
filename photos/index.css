@@ -1,0 +1,17 @@
+﻿body {
+background: #ffffff URL(../style/window.jpg) fixed left top;
+text-align: left;
+margin: 0px;
+font-family: tahoma, verdana, arial, sans-serif;
+font-size: 12pt;
+color:#000000;
+padding:0;
+}
+span{width:106;height:81}
+img{margin: 3;}
+a, a:link, a:active, a:visited {font-family: tahoma, verdana, arial, sans-serif;
+font-size: 12pt;color:#ff0000;text-decoration:none}
+a:hover {font-family: tahoma, verdana, arial, sans-serif;
+font-size: 12pt;color:#0000ff;text-decoration:none}
+a:hover img {
+border: solid 2px #ffffff;margin: 1;}

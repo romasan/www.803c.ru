@@ -1,0 +1,41 @@
+﻿<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<titleСайт учащихся группы 803с Высшего Колледжа Информатики НГУ - Фотоальбом</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script language="javascript">
+var m = new Array(
+"budnistudenta","Будни студента",
+"chernobyl","Чернобль",
+"pliazh","Пляж",
+"posviashenie2008","Посвящение 2008",
+"znakomstvo","Знакомство"
+);
+function menu()
+{
+document.all.photos.innerHTML="";
+for (i=0;i<m.length;i+=2)
+{
+if(i!=0&i%6==0){document.all.photos.innerHTML+="<br>"}
+document.all.photos.innerHTML+="<a href=\"" + m[i] + "/index.htm\"><img src=\"" + m[i] + "/index.jpg\" border=\"0\" onmouseover=\"titles('" + m[i+1] + "')\" onmouseout=\"titles('')\"></a>";
+}
+};
+function titles(t)
+{
+document.all.ititle.innerHTML=t;
+}
+function v()
+{
+menu();
+titles('')
+}
+</script>
+</head>
+<body onload="v()" scroll="auto">
+<center>
+<div id="photos"></div>
+<div><a href="http://vkontakte.ru/photos.php?&gid=4594239" target="_blank">album vkontakte</a></div>
+<div id="ititle">Загрузка... Если вы видите этот текст, значит у вас не настроен JavaScript в браузере:)</div>
+</center>
+</body>
+</html>

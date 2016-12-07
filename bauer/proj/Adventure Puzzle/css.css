@@ -1,0 +1,321 @@
+body{
+		margin : 0px;
+		overflow : hidden;
+	}
+*{
+	font-family : Courier New;
+	user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
+}
+	
+	.selected{
+		background : #ff7;
+		margin : -1px;
+	}
+	.error{
+		background : #f99;
+	}
+	
+	.point1{
+		background-image : url('1.png');
+	}
+	.point2{
+		background-image : url('2.png');
+	}
+	.point3{
+		background-image : url('3.png');
+	}
+	.point4{
+		background-image : url('4.png');
+	}
+	.point5{
+		background-image : url('5.png');
+	}
+	
+	.point6{
+		background-image : url('7.png');
+		background-size : 100%;
+	}
+	
+	.row{
+		display : block;
+	}
+	.column {
+		position : absolute;
+		text-align : center;
+		display : inline-block;
+//		margin : 1px;
+		background-size : 100%;
+		border-radius: 5px;
+	}
+	.hidden {
+		display : none;
+	}
+	
+	
+	.buttn{
+		position : absolute;
+		width : 10px;
+		height : 10px;
+		background-image : url('next.png');
+		background-size : 100%;
+	}
+	.inhistory{
+		background-image : url('old.png');
+	}
+	#thislevel{
+		background-image : url('flag.png');
+	}
+	
+	#youwin{
+		background : #333;
+		color : #fff;
+		width : 100%;
+		height : 100%;
+	}
+	#youwin, #gameover{
+		position : absolute;
+		background : #777;
+		color : #fff;
+		top : 200px;
+		left : 10px;
+		height : 70px;
+		border : 5px solid #333;
+		text-align : center;
+		font-size : 20pt;
+		padding-top : 40px;
+		border-radius :10px; 
+	}
+	#mapsplash{
+		width : 100#;
+		height : 100%;
+		background-image : url('map.png');
+		background-repeat : norepeat;
+		background-size : 100%;
+	}
+	#pointsbar{
+		background : #333;
+		color : #fff;
+		padding : 0px 10px 0px 10px;
+	}
+	#gamescreen{
+		background-image : url('bg.jpg');
+		background-size : 100% 100%;
+		height : 100%;
+	}
+	#startscreen {
+		background-image : url('menubg.jpg');
+		background-size : 100% 100%;
+		height : 100%;
+		background-repeat: no-repeat;
+	}
+	#continue {
+		background-image : url('continue.png');
+		background-size : 100% 100%;
+	}
+	#newgame {
+		background-image : url('newgame.png');
+		background-size : 100% 100%;
+	}
+	#help {
+		background-image : url('help.png');
+		background-size : 100% 100%;
+	}
+	#startscreen>div {
+		position : absolute;
+	}
+	.layer{
+		position : absolute;
+		left : 0px;
+	}
+	#winlayer1{
+		top : 0px;
+		background-image : url('layer1.png');
+		background-size : 100%;
+		width : 100%;
+		height : 100%;
+	}
+	#winlayer2{
+		width : 100%;
+		background-image : url('layer1.png');
+		background : #fff;
+		opacity : 0.7;
+	}
+	#winlayer3{
+		top : 0px;
+		background-image : url('layer3.png');
+		background-size : 100%;
+		width : 100%;
+		height : 100%;
+	}
+	#resetbut{
+		background-image : url('reset.png');
+		background-size : 100%;
+		position : absolute;
+		right : 0px;
+		top : 0px;
+		width : 30px;
+		height : 30px;
+	}
+	#mapsplash {
+		background-repeat: no-repeat;
+	}
+#middleline {
+	display : none;
+	position : absolute;
+	left : 0px;
+	width : 100%;
+	height : 0px;
+	border-bottom : 5px dashed #fff;
+	z-index : 999;
+}
+#topframe {
+	position : absolute;
+	background-image : url('topframe.png');
+	background-size : 100% 100%;
+}
+#bottomframe {
+	position : absolute;
+	background-image : url('bottomframe.png');
+	background-size : 100% 100%;
+}
+#playeris {
+	display : none;
+	position : absolute;
+	text-align : center;
+	font-family : arial;
+	font-weight : bold;
+	font-size : 32pt;
+	color : #fff;
+	text-shadow : 0px 1px #000;
+	z-index : 999;
+//	border : 1px dashed #f00;
+//	transform : rotate(180deg);
+}
+.hero {
+	position : absolute;
+	top : 0px;
+	background-size : 100%;
+	text-align : center;
+	font-size : 26pt;
+	color : #fff;
+	text-shadow : 0px 1px #000;
+}
+#player {
+	left : 0px;
+}
+.playerbg0 {
+	background-image : url('hero.png');
+}
+.playerbg1 {
+	background-image : url('heromove.png');
+}
+#opponent {
+	right : 0px;
+	background-size : 100% 100%;
+}
+#combatprogressbar {
+	position : absolute;
+}
+#combatbg {
+	position : absolute;
+	top : 0px;
+	left : 0px;
+	background-image : url('sword.png');
+	background-size : 100% 100%;
+	width : 100%;
+	height : 100%
+}
+#red {
+	position : absolute;
+	background : #f00;
+}
+#white {
+	position : absolute;
+	background : #fff;
+}
+.cprogress {
+	position : absolute;
+}
+.playerprogress {
+	position : absolute;
+	top : 0px;
+}
+.progressbar {
+	background : #000;
+}
+.progress {
+	background : #f00;
+}
+#opponent .progress {
+	right : 0px;
+}
+.op0 {
+	background-image : url('opponent0.png');
+}
+.op1 {
+	background-image : url('opponent1.png');
+}
+.op2 {
+	background-image : url('opponent2.png');
+}
+.hps {
+	position : absolute;
+	top : 0px;
+	color : #fff;
+	text-shadow : 0px 1px #000;
+//	border : 1px dashed #f00;
+}
+#herohp {
+	text-align : left;
+}
+#ophp {
+	text-align : right;
+}
+.splashshadow  {
+	position: absolute;
+	top : 0px;
+	left : 0px;
+	width : 100%;
+	height : 100%;
+	background : #000;
+	opacity : 0.7;
+	z-index : 1;
+}
+#splashtext {
+	position : absolute;
+	left : 0px;
+	top : 45%;
+	font-size : 20pt;
+	color : #fff;
+	text-shadow : 0px 1px #000;
+	width : 100%;
+	text-align : center;
+	z-index : 999;
+}
+#helpscreen {
+	background-image : url('menubg.jpg');
+	background-size : 100% 100%;
+	height : 100%;
+	background-repeat: no-repeat;
+	z-index : 1001;
+}
+.helptext {
+	position : absolute;
+	top : 0px;
+	left : 0px;
+	color : #fff;
+	text-shadow : 0px 1px #000;
+	padding : 15px;
+	z-index : 999;
+}
+#helpscreen img {
+	float : left;
+	margin : 5px;
+}
