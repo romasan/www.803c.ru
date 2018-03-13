@@ -1,0 +1,12 @@
+<mp3config>
+  <autostart>flase</autostart> 
+  <shuffle>flase</shuffle> 
+  <repeat>list</repeat> 
+  <volume>80</volume> 
+  <showdisplay>true</showdisplay> 
+  <showplaylist>true</showplaylist> 
+  <linktarget>_blank</linktarget>
+  <lightcolor>0xf21c1c</lightcolor> 
+  
+  <callback /> 
+  </mp3config>

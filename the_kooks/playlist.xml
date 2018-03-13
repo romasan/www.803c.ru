@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<playlist version="1" xmlns="http://xspf.org/ns/0/"> 
+<title>Sample XSPF Playlist</title> 
+<info>http://www.jeroenwijering.com/?item=Flash_MP3_Player</info> 
+<trackList> 
+	<track> 
+	  <annotation>Seaside</annotation> 
+	  <location>seaside.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>See the World</annotation> 
+	  <location>see the world.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>Sofa Song</annotation> 
+	  <location>sofa song.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>eddies gun</annotation> 
+	  <location>eddies gun.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>Ooh La</annotation> 
+	  <location>ooh la.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>You Don't Love Me</annotation> 
+	  <location>you dont love me.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>She Moves in Her Own Way</annotation> 
+	  <location>she moves in her own way.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>Match Box</annotation> 
+	  <location>match box.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>Naive</annotation> 
+	  <location>naive.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>I Want You Back</annotation> 
+	  <location>i want you back.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>If Only</annotation> 
+	  <location>if only.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>Jackie Big Tits</annotation> 
+	  <location>jackie big tits.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>Time Awaits</annotation> 
+	  <location>time awaits.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>Got No Love</annotation> 
+	  <location>got no love.mp3</location> 
+	  <info></info> 
+	  <image>title.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>See The Sun</annotation> 
+	  <location>see the sun.mp3</location> 
+	  <info></info> 
+	  <image>konk.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>Always Where I Need To Be</annotation> 
+	  <location>always where i need to be.mp3</location> 
+	  <info></info> 
+	  <image>konk.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>Mr. Maker</annotation> 
+	  <location>mr maker.mp3</location> 
+	  <info></info> 
+	  <image>konk.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>Do You Wanna</annotation> 
+	  <location>do you wanna.mp3</location> 
+	  <info></info> 
+	  <image>konk.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>Gap</annotation> 
+	  <location>gap.mp3</location> 
+	  <info></info> 
+	  <image>konk.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>Love It All</annotation> 
+	  <location>love it all.mp3</location> 
+	  <info></info> 
+	  <image>konk.jpg</image> 
+	</track> 
+	<track> 
+	  <annotation>Stormy Weather</annotation> 
+	  <location>stormy weather.mp3</location> 
+	  <info></info> 
+	  <image>konk.jpg</image> 
+	</track> 
+		<track> 
+		  <annotation>Sway</annotation> 
+		  <location>sway.mp3</location> 
+		  <info></info> 
+		  <image>konk.jpg</image> 
+		</track>
+		<track> 
+		  <annotation>Shine On</annotation> 
+		  <location>shine on.mp3</location> 
+		  <info></info> 
+		  <image>konk.jpg</image> 
+		</track>
+		<track> 
+		  <annotation>Down To The Market</annotation> 
+		  <location>down to the market.mp3</location> 
+		  <info></info> 
+		  <image>konk.jpg</image> 
+		</track>
+		<track> 
+		  <annotation>One Last Time</annotation> 
+		  <location>one last time.mp3</location> 
+		  <info></info> 
+		  <image>konk.jpg</image> 
+		</track>
+		<track> 
+		  <annotation>Tick Of Time (+ Hidden Track 'all Over Town')</annotation> 
+		  <location>tick of time.mp3</location> 
+		  <info></info> 
+		  <image>konk.jpg</image> 
+		</track>
+		<track> 
+		  <annotation>Brooklyn (Home Demo)</annotation> 
+		  <location>brooklyn.mp3</location> 
+		  <info></info> 
+		  <image>konk.jpg</image> 
+		</track>
+		<track> 
+		  <annotation>Fa La La</annotation> 
+		  <location>fa la la.mp3</location> 
+		  <info></info> 
+		  <image>konk.jpg</image> 
+		</track>
+		<track> 
+		  <annotation>Hatful of Love</annotation> 
+		  <location>hatful of love.mp3</location> 
+		  <info></info> 
+		  <image>konk.jpg</image> 
+		</track>
+		<track> 
+		  <annotation>No Longer</annotation> 
+		  <location>no longer.mp3</location> 
+		  <info></info> 
+		  <image>konk.jpg</image> 
+		</track>
+		<track> 
+		  <annotation>Nothing Ever Changes</annotation> 
+		  <location>nothing ever changes.mp3</location> 
+		  <info></info> 
+		  <image>konk.jpg</image> 
+		</track>
+		<track> 
+		  <annotation>Princess of my mind</annotation> 
+		  <location>princess of my mind.mp3</location> 
+		  <info></info> 
+		  <image>konk.jpg</image> 
+		</track>
+		<track> 
+		  <annotation>Watching the Ships Roll In</annotation> 
+		  <location>watching the ships roll in.mp3</location> 
+		  <info></info> 
+		  <image>konk.jpg</image> 
+		</track>
+		
+</trackList> 
+</playlist> 

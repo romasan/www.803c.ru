@@ -1,0 +1,46 @@
+
+
+.body
+{background-color:#b4b4b4;
+}
+
+.body12
+{background-color:#cdcdcd;}
+
+.headerimage
+{margin-bottom:7px;}
+
+.conteiner
+{float:right; width:100%; }
+
+.content
+{
+background-color:#cdcdcd;
+
+font-family:Comic Sans MS;
+font-size:16px;
+color:black;
+}
+
+.table
+{width:100%;
+border:0;
+}
+
+.buttons
+{ float:left; width:300 px; height:30 px;}
+
+
+.button A
+{color: white; background-color:#514b4b; height:25;font-family:Comic Sans MS;}
+
+.button A:hover
+{color:#000000; background-color: silver;font-family:Comic Sans MS;}
+
+.button A, button A:hover
+{text-decoration:none; display: block}
+
+.A:hover
+{color:ffffff;
+background-color: 535353;
+}
