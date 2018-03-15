@@ -17,3 +17,9 @@ a:hover img {display:block;position:absolute}
 .post {
   margin-bottom: 10px;
 }
+.offline {
+  color: #800000;
+}
+.moved {
+  color: #808000;
+}
