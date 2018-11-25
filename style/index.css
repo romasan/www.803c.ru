@@ -1,39 +1,50 @@
 ﻿body {
-background: #ffffff URL(background.jpg) center top;
-text-align: left;
-margin: 0px;
-font-family: tahoma, verdana, arial, sans-serif;
-font-size: 12pt;
-color:#000000;
-padding:0;
+    background: #ffffff URL(background.jpg) center top;
+    text-align: left;
+    margin: 0px;
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 12pt;
+    color: #000000;
+    padding: 0;
 }
-a, a:link, a:active, a:visited {font-family: tahoma, verdana, arial, sans-serif;
-font-size: 12pt;color:#ff0000;text-decoration:none}
-a:hover {font-family: tahoma, verdana, arial, sans-serif;
-font-size: 12pt;color:#0000ff;text-decoration:none}
-img
-{border:0;
-padding:0;
+a, a:link, a:active, a:visited {
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 12pt;
+    color: #ff0000;
+    text-decoration: none;
 }
-.banners {height:100}
+a:hover {
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 12pt;
+    color: #0000ff;
+    text-decoration: none;
+}
+img {
+    border: 0;
+    padding: 0;
+}
+.banners {
+    height: 100px;
+}
 td.l {
-background: #ffffff URL(l.gif) right top;
+    background: #ffffff URL(l.gif) right top;
 }
 td.r {
-background: #ffffff URL(r.gif) right top;
+    background: #ffffff URL(r.gif) right top;
 }
 td.t {
-background: #ffffff URL(t.gif) left top;
+    background: #ffffff URL(t.gif) left top;
 }
 td.b {
-background: #ffffff URL(b.gif) left top;
+    background: #ffffff URL(b.gif) left top;
 }
 .top {
-background: #ffffff URL(top.jpg) left top;
+    margin-left: -1px;
+    background: #ffffff URL(top.jpg) left top;
 }
 .bg {
-background: #ffffff URL(window.jpg) left top;
+    background: #ffffff URL(window.jpg) left top;
 }
 .bgw {
-background: #ffffff;
+    background: #ffffff;
 }

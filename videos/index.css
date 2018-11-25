@@ -1,12 +1,26 @@
 ﻿body {
-background: #ffffff URL(../style/window.jpg) fixed left top;
-text-align: left; margin: 0px; padding: 0px;
-font-family: tahoma, verdana, arial, sans-serif;
-font-size: 30pt;
-color:#000000;
-padding:0;
+    background: #ffffff URL(../style/window.jpg) fixed left top;
+    text-align: left;
+    margin: 0px; padding: 0px;
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 30pt;
+    color: #000000;
+    padding: 0;
 }
-a, a:link, a:active, a:visited {font-family: tahoma, verdana, arial, sans-serif;
-font-size: 12pt;color:#0000ff;text-decoration:none;padding-left:5;padding-right:5}
-a:hover {background:#000000;font-family: tahoma, verdana, arial, sans-serif;
-font-size: 12pt;color:#ffffff;text-decoration:none;padding-left:5;padding-right:5}
+a, a:link, a:active, a:visited {
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 12pt;
+    color: #0000ff;
+    text-decoration: none;
+    padding-left: 5;
+    padding-right: 5;
+}
+a:hover {
+    background: #000000;
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 12pt;
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 5;
+    padding-right: 5;
+}

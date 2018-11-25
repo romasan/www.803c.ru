@@ -1,36 +1,39 @@
-﻿<SCRIPT language="javascript">
+﻿<script language="javascript">
 var p = new Array("x_1e5c1cd0.jpg","x_3b69ff0a.jpg","x_5b3d588e.jpg","x_42eef52f.jpg","x_151c80db.jpg","x_641e7d1d.jpg","x_37701d54.jpg","x_77173a9f.jpg","x_7864743f.jpg","x_30007522.jpg",
 "x_77766387.jpg","x_95111972.jpg","x_a54e04ff.jpg","x_ac191bc0.jpg","x_c1e04ea9.jpg","x_c7d48687.jpg","x_d02b80b9.jpg","x_de872cbe.jpg","x_e9ea360f.jpg","x_f3fa8294.jpg","x_feceeec5.jpg");
 var l = p.length;
-var i=0;
-function wrt()
-{
-document.all.nbr.innerHTML=i+1 + " из " + l;
-myi.src=p[i];
+var i = 0;
+function wrt() {
+    document.all.nbr.innerHTML = i + 1 + " из " + l;
+    myi.src=p[i];
 }
-function next()
-{
-if (i < l-1){i++;wrt();}
+function next() {
+    if (i < l - 1) {
+        i++;
+        wrt();
+    }
 };
-function back()
-{
-if (i > 0){i--;wrt();}
+function back() {
+    if (i > 0) {
+        i--;
+        wrt();
+    }
 }
-function photo(j)
-{
-document.all.wall.innerHTML="<a href=\"javascript:next()\"><img src=\"#\" id=\"myi\" border=\"0\"></a><br> <a href=\"javascript:photos()\">все фото</a> <a href=\"javascript:back()\">назад</a> | <a href=\"javascript:next()\">вперёд</a> <b id =\"nbr\"></b>";
-i=j;
-wrt();
+function photo(j) {
+    document.all.wall.innerHTML = "<a href=\"javascript:next()\"><img src=\"#\" id=\"myi\" border=\"0\"></a><br> <a href=\"javascript:photos()\">все фото</a> <a href=\"javascript:back()\">назад</a> | <a href=\"javascript:next()\">вперёд</a> <b id =\"nbr\"></b>";
+    i = j;
+    wrt();
 }
-function photos()
-{
-document.all.wall.innerHTML="";
-for(i=0;i<p.length;i++){
-if(i!=0&i%6==0){document.all.wall.innerHTML+="<br>"}
-document.all.wall.innerHTML+="<span><a href=\"javascript:photo(" + i + ")\"><img src=\"m/" + p[i] + "\" border=\"0\"></a></span>"
+function photos() {
+    document.all.wall.innerHTML = "";
+    for (var i = 0; i < p.length; i++) {
+        if (i != 0 && i % 6 == 0) {
+            document.all.wall.innerHTML += "<br>";
+        }
+        document.all.wall.innerHTML += "<span><a href=\"javascript:photo(" + i + ")\"><img src=\"m/" + p[i] + "\" border=\"0\"></a></span>";
+    }
 }
-}
-</SCRIPT>
+</script>
 <html>
 <head>
 <META http-equiv=Content-Type content="text/html; charset=utf-8">
@@ -38,13 +41,17 @@ document.all.wall.innerHTML+="<span><a href=\"javascript:photo(" + i + ")\"><img
 <link rel="stylesheet" type="text/css" href="../index.css">
 </head>
 <body onload="photo(0)">
-<table width="100%" height="100%" cellpadding="0" cellspacing="0">
-<tr><td align="left" valign="top">
-<a href="../index.htm">назад</a>
-</td></tr>
-<tr><td valign="top" align="middle">
-<div id="wall"></div>
-</td></tr>
-</table>
+    <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="left" valign="top">
+                <a href="../index.htm">назад</a>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="middle">
+                <div id="wall"></div>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

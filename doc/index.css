@@ -17,6 +17,9 @@ a:hover img {display:block;position:absolute}
 .post {
   margin-bottom: 10px;
 }
+.online {
+  color: #008d00;
+}
 .offline {
   color: #800000;
 }

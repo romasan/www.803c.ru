@@ -1,38 +1,41 @@
-﻿<SCRIPT language="javascript">
+﻿<script language="javascript">
 var p = new Array("x_0cde4a2f.jpg","x_0f0f2578.jpg","x_2aad8305.jpg","x_4bc155c1.jpg","x_4f399edb.jpg","x_5b74c8a3.jpg","x_5be75d1c.jpg","x_06dab556.jpg","x_7bcb1119.jpg","x_9b87d982.jpg",
 "x_13e62959.jpg","x_33b08745.jpg","x_39e7a0b9.jpg","x_43ad1dd1.jpg","x_52ce70cd.jpg","x_129b906d.jpg","x_175b1311.jpg","x_262da467.jpg","x_725e134a.jpg","x_753dd012.jpg","x_835a290a.jpg",
 "x_4435ddc2.jpg","x_6494d71e.jpg","x_8325e3a0.jpg","x_828345da.jpg","x_41727942.jpg","x_a592dcbb.jpg","x_aa60ffe1.jpg","x_af05f3e3.jpg","x_bedfd1d5.jpg","x_c4ec2bee.jpg","x_d4da382e.jpg",
 "x_d425bdeb.jpg","x_d506ded9.jpg","x_d895aa35.jpg","x_d1427be1.jpg","x_d852241b.jpg","x_daf6de5f.jpg","x_e2e17403.jpg","x_e96ada69.jpg","x_ef350fad.jpg","x_f7c7d14f.jpg","x_f22b62df.jpg");
 var l = p.length;
-var i=0;
-function wrt()
-{
-document.all.nbr.innerHTML=i+1 + " из " + l;
-myi.src=p[i];
+var i = 0;
+function wrt() {
+    document.all.nbr.innerHTML=i+1 + " из " + l;
+    myi.src=p[i];
 }
-function next()
-{
-if (i < l-1){i++;wrt();}
+function next() {
+    if (i < l - 1) {
+        i++;
+        wrt();
+    }
 };
-function back()
-{
-if (i > 0){i--;wrt();}
+function back() {
+    if (i > 0) {
+        i--;
+        wrt();
+    }
 }
-function photo(j)
-{
-document.all.wall.innerHTML="<a href=\"javascript:next()\"><img src=\"#\" id=\"myi\" border=\"0\"></a><br> <a href=\"javascript:photos()\">все фото</a> <a href=\"javascript:back()\">назад</a> | <a href=\"javascript:next()\">вперёд</a> <b id =\"nbr\"></b>";
-i=j;
-wrt();
+function photo(j) {
+    document.all.wall.innerHTML = "<a href=\"javascript:next()\"><img src=\"#\" id=\"myi\" border=\"0\"></a><br> <a href=\"javascript:photos()\">все фото</a> <a href=\"javascript:back()\">назад</a> | <a href=\"javascript:next()\">вперёд</a> <b id =\"nbr\"></b>";
+    i = j;
+    wrt();
 }
-function photos()
-{
-document.all.wall.innerHTML="";
-for(i=0;i<p.length;i++){
-if(i!=0&i%6==0){document.all.wall.innerHTML+="<br>"}
-document.all.wall.innerHTML+="<span><a href=\"javascript:photo(" + i + ")\"><img src=\"m/" + p[i] + "\" border=\"0\"></a></span>"
+function photos() {
+    document.all.wall.innerHTML = "";
+    for (var i = 0; i < p.length; i++) {
+        if (i != 0 && i % 6 == 0) {
+            document.all.wall.innerHTML += "<br>";
+        }
+        document.all.wall.innerHTML += "<span><a href=\"javascript:photo(" + i + ")\"><img src=\"m/" + p[i] + "\" border=\"0\"></a></span>";
+    }
 }
-}
-</SCRIPT>
+</script>
 <html>
 <head>
 <META http-equiv=Content-Type content="text/html; charset=utf-8">
@@ -40,13 +43,17 @@ document.all.wall.innerHTML+="<span><a href=\"javascript:photo(" + i + ")\"><img
 <link rel="stylesheet" type="text/css" href="../index.css">
 </head>
 <body onload="photo(0)">
-<table width="100%" height="100%" cellpadding="0" cellspacing="0">
-<tr><td align="left" valign="top">
-<a href="../index.htm">назад</a>
-</td></tr>
-<tr><td valign="top" align="middle">
-<div id="wall"></div>
-</td></tr>
-</table>
+    <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="left" valign="top">
+                <a href="../index.htm">назад</a>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="middle">
+                <div id="wall"></div>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

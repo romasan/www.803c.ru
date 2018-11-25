@@ -1,4 +1,4 @@
-﻿<SCRIPT language="javascript">
+﻿<script language="javascript">
 var p = new Array("x_0c135f89.jpg","x_0e198be2.jpg","x_0fb95030.jpg","x_1d1c6c0e.jpg","x_1d9c29b2.jpg","x_1e435a6c.jpg","x_1f80566f.jpg","x_4b7b7916.jpg","x_4c776274.jpg","x_4d8968d7.jpg",
 "x_4d226116.jpg","x_4ff1fb83.jpg","x_5bc67d27.jpg","x_5faed6fc.jpg","x_6a268bb8.jpg","x_7d8a5310.jpg","x_9b20386c.jpg","x_9b842821.jpg","x_16a255f1.jpg","x_25ff459c.jpg","x_28f94142.jpg",
 "x_40e5ccad.jpg","x_44c7c847.jpg","x_60c8f0c5.jpg","x_0116b21d.jpg","x_145e7ac2.jpg","x_187ae669.jpg","x_209fce8d.jpg","x_213ad803.jpg","x_3914b3ff.jpg","x_4408a6fb.jpg","x_28094d7d.jpg",
@@ -7,35 +7,38 @@ var p = new Array("x_0c135f89.jpg","x_0e198be2.jpg","x_0fb95030.jpg","x_1d1c6c0e
 "x_ceef77a2.jpg","x_cfdf01cc.jpg","x_d4a9a988.jpg","x_d67e3945.jpg","x_d3980f32.jpg","x_dbbaad14.jpg","x_ddc47a90.jpg","x_df38e0ee.jpg","x_df9780e6.jpg","x_e06a6d9a.jpg","x_ef8397a2.jpg",
 "x_f3f2c0c4.jpg","x_f8e3285d.jpg","x_f2259b32.jpg","x_f546015c.jpg","x_f757057c.jpg","x_fa53fb26.jpg","x_fcc09d41.jpg","x_ffa8b66f.jpg","x_69bd4a2c.jpg","x_85cd21f6.jpg","x_196d44d6.jpg");
 var l = p.length;
-var i=0;
-function wrt()
-{
-document.all.nbr.innerHTML=i+1 + " из " + l;
-myi.src=p[i];
+var i = 0;
+function wrt() {
+    document.all.nbr.innerHTML = i + 1 + " из " + l;
+    myi.src = p[i];
 }
-function next()
-{
-if (i < l-1){i++;wrt();}
+function next() {
+    if (i < l - 1) {
+        i++;
+        wrt();
+    }
 };
-function back()
-{
-if (i > 0){i--;wrt();}
+function back() {
+    if (i > 0) {
+        i--;
+        wrt();
+    }
 }
-function photo(j)
-{
-document.all.wall.innerHTML="<a href=\"javascript:next()\"><img src=\"#\" id=\"myi\" border=\"0\"></a><br> <a href=\"javascript:photos()\">все фото</a> <a href=\"javascript:back()\">назад</a> | <a href=\"javascript:next()\">вперёд</a> <b id =\"nbr\"></b>";
-i=j;
-wrt();
+function photo(j) {
+    document.all.wall.innerHTML = "<a href=\"javascript:next()\"><img src=\"#\" id=\"myi\" border=\"0\"></a><br> <a href=\"javascript:photos()\">все фото</a> <a href=\"javascript:back()\">назад</a> | <a href=\"javascript:next()\">вперёд</a> <b id =\"nbr\"></b>";
+    i = j;
+    wrt();
 }
-function photos()
-{
-document.all.wall.innerHTML="";
-for(i=0;i<p.length;i++){
-if(i!=0&i%6==0){document.all.wall.innerHTML+="<br>"}
-document.all.wall.innerHTML+="<span><a href=\"javascript:photo(" + i + ")\"><img src=\"m/" + p[i] + "\" border=\"0\"></a></span>"
+function photos() {
+    document.all.wall.innerHTML = "";
+    for (var i = 0; i < p.length; i++) {
+        if (i != 0 && i % 6 == 0) {
+            document.all.wall.innerHTML += "<br>";
+        }
+        document.all.wall.innerHTML += "<span><a href=\"javascript:photo(" + i + ")\"><img src=\"m/" + p[i] + "\" border=\"0\"></a></span>";
+    }
 }
-}
-</SCRIPT>
+</script>
 <html>
 <head>
 <META http-equiv=Content-Type content="text/html; charset=utf-8">
@@ -43,13 +46,17 @@ document.all.wall.innerHTML+="<span><a href=\"javascript:photo(" + i + ")\"><img
 <link rel="stylesheet" type="text/css" href="../index.css">
 </head>
 <body onload="photo(0)">
-<table width="100%" height="100%" cellpadding="0" cellspacing="0">
-<tr><td align="left" valign="top">
-<a href="../index.htm">назад</a>
-</td></tr>
-<tr><td valign="top" align="middle">
-<div id="wall"></div>
-</td></tr>
-</table>
+    <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="left" valign="top">
+                <a href="../index.htm">назад</a>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="middle">
+                <div id="wall"></div>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
